@@ -1,0 +1,123 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 50%;
+    height: 50px;
+    color: white;
+    align-items: center;
+    padding: 0px 25px;
+    font-size: 20px;
+}
+
+.container{
+    padding-top: 30px;
+    width: 54%;
+    height: auto;
+    border-radius: 15%;
+    background-color: rgb(12, 22, 48);
+    border: 3px solid yellow;
+    text-align: center;
+}
+
+.boxes{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+}
+
+.boxes div{
+    width: 25%;
+    height: 80px;
+    background-color:rgb(21, 36, 73);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.boxes div img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translateY(10px);
+}
+
+.coins{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.coins img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+
+}
+
+.container>img{
+    width: 80%;
+    border-radius: 50%;
+
+}
+
+.container>img:active{
+    transform: rotateY(30deg);
+    transition: 500ms;
+}
+
+.light_boost{
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-around;
+    width: 90%;
+    color: white;
+    margin: 30px auto;
+    font-size: 27px;
+}
+
+.boost img{
+    width: 30px;
+}
+
+.fa-bolt, .fa-rocket{
+    color: gold;
+}
+
+.tap{
+    color: white;
+    animation-name: plus;
+    animation-duration: 1s;
+}
+
+@keyframes plus {
+    from{
+
+    }
+    to{
+        transform: translateY(-20px) ;
+        opacity: 0;
+    }
+    
+}
